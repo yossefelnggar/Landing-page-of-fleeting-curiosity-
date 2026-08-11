@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="فضول عابر — سؤال صغير.. عالم كامل. اكتشف حقائق وأسئلة غريبة كل يوم.">
+<meta name="theme-color" content="#080b14">
+<meta property="og:title" content="فضول عابر | سؤال صغير.. عالم كامل">
+<meta property="og:description" content="بوابة الفضوليين: أسئلة، حقائق، ألغاز واكتشافات.">
+<meta property="og:image" content="https://i.ibb.co/Rp5K8btJ/file-00000000694481f4bee3b2c097416713.png">
+<meta property="og:url" content="https://fodoulaaber.com">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="فضول عابر | سؤال صغير.. عالم كامل">
+<meta name="twitter:description" content="بوابة الفضوليين: أسئلة، حقائق، ألغاز واكتشافات.">
+<meta name="twitter:image" content="https://i.ibb.co/Rp5K8btJ/file-00000000694481f4bee3b2c097416713.png">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💡</text></svg>">
+<title>فضول عابر | سؤال صغير.. عالم كامل</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+:root{
+  --bg:#070a12;--panel:rgba(18,24,40,.76);--panel2:#101728;
+  --gold:#f6a623;--teal:#20c7a0;--text:#f8fafc;--muted:#a6b0c3;
+  --line:rgba(255,255,255,.09);--shadow:0 18px 60px rgba(0,0,0,.38);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:Cairo,sans-serif;color:var(--text);min-height:100vh;overflow-x:hidden;
+  background:
+    radial-gradient(circle at 15% 10%,rgba(32,199,160,.10),transparent 25%),
+    radial-gradient(circle at 85% 15%,rgba(246,166,35,.12),transparent 28%),
+    radial-gradient(circle at 50% 90%,rgba(91,78,220,.12),transparent 30%),var(--bg);
+}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.55;background-image:
+ radial-gradient(1px 1px at 10% 20%,#fff,transparent),radial-gradient(1px 1px at 30% 70%,#fff,transparent),
+ radial-gradient(1px 1px at 70% 30%,#fff,transparent),radial-gradient(1px 1px at 90% 75%,#fff,transparent),
+ radial-gradient(1px 1px at 55% 12%,#fff,transparent),radial-gradient(1px 1px at 80% 55%,#fff,transparent);
+ background-size:280px 280px;animation:stars 16s linear infinite}
+@keyframes stars{to{transform:translateY(-30px)}}
+.container{width:min(720px,100%);margin:auto;padding:28px 18px 35px;position:relative;z-index:1}
+.hero{text-align:center;padding:8px 0 4px}
+.logo{
+ width:min(430px,90%);border-radius:24px;display:block;margin:auto;
+ border:1px solid rgba(246,166,35,.35);box-shadow:0 20px 70px rgba(246,166,35,.12);
+ transition:.35s;animation:float 5s ease-in-out infinite
+}
+.logo:hover{transform:scale(1.015) rotate(-.4deg)}
+@keyframes float{50%{transform:translateY(-7px)}}
+.tagline{margin-top:16px;font-size:1.18rem;color:var(--muted);font-weight:700}
+.tagline b{color:var(--gold)}
+.glass{background:linear-gradient(145deg,rgba(20,28,46,.88),rgba(10,15,27,.72));border:1px solid var(--line);box-shadow:var(--shadow);backdrop-filter:blur(14px);border-radius:22px}
+.card{padding:22px;margin-top:22px}
+.eyebrow{color:var(--gold);font-weight:800;font-size:.92rem}
+.question{font-size:1.28rem;font-weight:900;line-height:1.8;margin:10px 0 16px}
+.answer{display:none;color:var(--muted);line-height:1.9;background:rgba(255,255,255,.045);border:1px solid var(--line);border-radius:15px;padding:14px;animation:in .35s ease}
+.answer.show{display:block}
+@keyframes in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+button,.btn{font-family:inherit;border:0;cursor:pointer;text-decoration:none;color:#fff;font-weight:800}
+.primary{background:linear-gradient(135deg,var(--gold),#e67e22);padding:11px 20px;border-radius:999px;box-shadow:0 8px 25px rgba(246,166,35,.2)}
+.secondary{background:#26334b;padding:11px 18px;border-radius:999px}
+button{transition:.25s}button:hover{transform:translateY(-2px)}
+.section-title{text-align:center;margin:30px 0 13px;font-size:1.05rem}
+.categories{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.category{padding:15px 8px;text-align:center;border-radius:16px;background:var(--panel);border:1px solid var(--line);color:var(--text);cursor:pointer;transition:.25s}
+.category:hover,.category.active{border-color:rgba(246,166,35,.6);transform:translateY(-3px);box-shadow:0 10px 25px rgba(246,166,35,.09)}
+.category i{display:block;font-size:1.35rem;color:var(--gold);margin-bottom:6px}
+.links{display:flex;flex-direction:column;gap:12px}
+.link{display:flex;align-items:center;gap:14px;padding:15px 17px;border-radius:16px;background:var(--panel);border:1px solid var(--line);color:#fff;text-decoration:none;transition:.3s}
+.link i{width:32px;text-align:center;font-size:1.45rem}
+.link span{flex:1;font-weight:800}
+.link small{color:var(--muted);font-size:.72rem}
+.link:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(0,0,0,.28)}
+.whatsapp i{color:#25D366}.telegram i{color:#29a9ea}.instagram i{color:#e4405f}.youtube i{color:#ff0000}.facebook i{color:#1877f2}
+.share{padding:20px;margin-top:22px;text-align:center;border:1px dashed rgba(246,166,35,.65)}
+.share h3{color:var(--gold);margin-bottom:5px}.share p{color:var(--muted);font-size:.88rem;margin-bottom:14px}
+.streak{display:flex;justify-content:center;gap:10px;align-items:center;color:var(--muted);font-size:.88rem;margin-top:14px}
+.streak strong{color:var(--gold)}
+.toast{position:fixed;bottom:22px;left:50%;transform:translate(-50%,20px);background:#151f33;border:1px solid var(--line);padding:11px 18px;border-radius:999px;opacity:0;pointer-events:none;transition:.3s;z-index:20}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+footer{text-align:center;color:#778198;font-size:.78rem;margin-top:28px;line-height:1.8}
+@media(max-width:520px){.categories{grid-template-columns:repeat(2,1fr)}.question{font-size:1.1rem}.container{padding-inline:13px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
+</style>
+</head>
+
+<body>
+<main class="container">
+  <header class="hero">
+    <img class="logo" src="https://i.ibb.co/Rp5K8btJ/file-00000000694481f4bee3b2c097416713.png" alt="شعار فضول عابر">
+    <p class="tagline">سؤال صغير.. <b>عالم كامل</b> 🚀</p>
+  </header>
+
+  <section class="glass card" aria-label="سؤال الفضول">
+    <div class="eyebrow">💡 سؤال الفضول</div>
+    <div class="question" id="question">هل تعلم لماذا لا نشعر بدوران الأرض؟</div>
+    <div class="actions">
+      <button class="primary" id="reveal">اكتشف الإجابة 🔍</button>
+      <button class="secondary" id="next">سؤال آخر 🎲</button>
+    </div>
+    <div class="answer" id="answer"></div>
+    <div class="streak">🔥 فضولك مستمر: <strong id="streak">0</strong> سؤال مكتشف</div>
+  </section>
+
+  <h2 class="section-title">استكشف فضولك 🧭</h2>
+  <section class="categories" id="categories">
+    <button class="category active" data-cat="all"><i class="fa-solid fa-wand-magic-sparkles"></i>الكل</button>
+    <button class="category" data-cat="space"><i class="fa-solid fa-earth-americas"></i>الفضاء</button>
+    <button class="category" data-cat="science"><i class="fa-solid fa-atom"></i>العلوم</button>
+    <button class="category" data-cat="mind"><i class="fa-solid fa-brain"></i>العقل</button>
+    <button class="category" data-cat="history"><i class="fa-solid fa-landmark"></i>التاريخ</button>
+    <button class="category" data-cat="weird"><i class="fa-solid fa-fingerprint"></i>الغريب</button>
+  </section>
+
+  <h2 class="section-title">انضم لرحلة الاستكشاف 🌍</h2>
+  <section class="links">
+    <a class="link whatsapp" href="https://whatsapp.com/channel/0029Vb9B09330LKRNpt7Y52y" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i><span>قناة الواتساب</span><small>جرعة يومية ⚡</small></a>
+    <a class="link telegram" href="https://t.me/FodoulAaber" target="_blank" rel="noopener"><i class="fa-brands fa-telegram"></i><span>قناة التليجرام</span><small>مقالات وحقائق 📚</small></a>
+    <a class="link instagram" href="https://www.instagram.com/fodoulaaber?igsh=MWl5a3lneXdtZXJ5aw==" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i><span>انستجرام</span><small>صور وإنفوجرافيك 📸</small></a>
+    <a class="link youtube" href="https://youtube.com/@fodoulaaber?si=6RkiOpNysvSa6Kzk" target="_blank" rel="noopener"><i class="fa-brands fa-youtube"></i><span>قناة اليوتيوب</span><small>فيديوهات قصيرة 🎬</small></a>
+    <a class="link facebook" href="https://www.facebook.com/share/1Roq18aocy/" target="_blank" rel="noopener"><i class="fa-brands fa-facebook"></i><span>صفحة الفيسبوك</span><small>مجتمع الفضوليين 👥</small></a>
+  </section>
+
+  <section class="glass share">
+    <h3>تشارك المعرفة؟ 🧠</h3>
+    <p>تعرف شخصًا يمتلك «فضولًا عابرًا» لكل شيء حوله؟ أرسل له الصفحة.</p>
+    <div class="actions">
+      <a class="btn primary" id="whatsappShare" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> مشاركة بالواتس</a>
+      <button class="secondary" id="copy">نسخ الرابط 📋</button>
+    </div>
+  </section>
+
+  <footer>
+    الفضول هو بداية كل اكتشاف.<br>
+    جميع الحقوق محفوظة © فضول عابر
+  </footer>
+</main>
+
+<div class="toast" id="toast">✓ تم نسخ الرابط</div>
+
+<script>
+const questions = [
+ {cat:"space",q:"هل تعلم لماذا لا نشعر بدوران الأرض؟",a:"لأننا والأشياء من حولنا نتحرك مع الأرض بنفس السرعة تقريبًا، كما أن الحركة الدورانية منتظمة جدًا بالنسبة لنا."},
+ {cat:"space",q:"ماذا سيحدث لو اختفى القمر فجأة؟",a:"لن تتوقف الحياة فورًا، لكن المد والجزر سيتغيران بشدة، وستتأثر بعض الأنظمة البيئية، كما ستتغير استقرار حركة الأرض على المدى الطويل."},
+ {cat:"science",q:"لماذا يبدو الثلج أبيض رغم أن الماء شفاف؟",a:"بلورات الثلج الصغيرة تشتت الضوء في اتجاهات كثيرة، فيختلط الضوء المنعكس ويظهر لنا باللون الأبيض."},
+ {cat:"science",q:"لماذا يطفو الجليد فوق الماء؟",a:"عندما يتجمد الماء تتشكل بنية بلورية أكثر تباعدًا، فتقل كثافته مقارنة بالماء السائل."},
+ {cat:"mind",q:"لماذا نشعر أن الوقت يمر بسرعة عندما نستمتع؟",a:"الانتباه والذاكرة يؤثران في إحساسنا بالزمن؛ عندما نكون مندمجين في تجربة قد نلاحظ مرور الوقت بدرجة أقل."},
+ {cat:"mind",q:"لماذا نتذكر بعض الأحلام ثم ننساها بسرعة؟",a:"الأحلام لا تُخزّن دائمًا في الذاكرة طويلة المدى بنفس قوة الأحداث التي نعيشها ونحن مستيقظون، لذلك قد تتلاشى تفاصيلها بسرعة."},
+ {cat:"history",q:"لماذا كانت بعض الحضارات القديمة تبني الأهرامات؟",a:"الأهرامات ارتبطت في حضارات مختلفة بالدفن والطقوس الدينية والرمزية السياسية، ولم تكن كلها مبنية للسبب نفسه."},
+ {cat:"history",q:"كيف كان الناس يعرفون الوقت قبل الساعات الحديثة؟",a:"استخدموا الشمس والظل والساعات الشمسية والمائية، ثم تطورت تقنيات قياس الوقت تدريجيًا إلى الساعات الميكانيكية."},
+ {cat:"weird",q:"هل الأخطبوط لديه أكثر من قلب؟",a:"نعم. للأخطبوط ثلاثة قلوب: قلبان يضخان الدم نحو الخياشيم، والثالث يضخه إلى باقي الجسم."},
+ {cat:"weird",q:"هل يمكن أن يتغير لون بعض الحيوانات بسبب البيئة؟",a:"نعم. بعض الحيوانات تستطيع تغيير لونها أو نمطها جزئيًا للتخفي أو التواصل أو تنظيم الحرارة، لكن الآلية تختلف من نوع لآخر."},
+ {cat:"space",q:"لماذا تبدو النجوم متلألئة بينما الكواكب لا؟",a:"ضوء النجوم البعيدة نقطة صغيرة جدًا فيتشتت أثناء مروره بطبقات الجو المتحركة فيظهر متلألئًا، أما الكواكب فأقرب فتبدو كقرص صغير أثبت للعين."},
+ {cat:"science",q:"لماذا تصدر بعض الحشرات ضوءًا في الليل؟",a:"تحدث تفاعلًا كيميائيًا يسمى التلألؤ الحيوي، ينتج ضوءًا باردًا يستخدم غالبًا للتواصل أو جذب الشريك."},
+ {cat:"mind",q:"لماذا يصعب أحيانًا تذكر اسم شخص قابلناه للتو؟",a:"الذاكرة قصيرة المدى تحتاج تكرارًا أو ربطًا بمعلومة أخرى لتثبت المعلومة الجديدة في الذاكرة طويلة المدى."},
+ {cat:"history",q:"من أول من استخدم فكرة الرقم صفر؟",a:"عرفت حضارات عدة مفاهيم قريبة منه، لكن علماء الهند هم من طوروا الصفر كرقم رياضي متكامل قابل للحساب، ثم انتقل عبر العالم الإسلامي إلى أوروبا."}
+];
+
+let current = null;
+let category = "all";
+let streak = Number(localStorage.getItem("fa_streak") || 0);
+let alreadyCounted = false;
+const milestones = [5, 10, 20, 50];
+
+const qEl=document.getElementById("question"), aEl=document.getElementById("answer");
+const streakEl=document.getElementById("streak"), toast=document.getElementById("toast");
+streakEl.textContent=streak;
+
+function pool(){return category==="all"?questions:questions.filter(x=>x.cat===category)}
+function newQuestion(){
+ const p=pool();
+ let pick=p[Math.floor(Math.random()*p.length)];
+ if(p.length>1){ while(current && pick.q===current.q){ pick=p[Math.floor(Math.random()*p.length)]; } }
+ current=pick;
+ qEl.textContent=current.q; aEl.textContent=current.a; aEl.classList.remove("show");
+ document.getElementById("reveal").textContent="اكتشف الإجابة 🔍";
+ alreadyCounted=false;
+}
+document.getElementById("next").onclick=newQuestion;
+document.getElementById("reveal").onclick=()=>{
+ if(!aEl.classList.contains("show")){
+   aEl.classList.add("show");
+   if(!alreadyCounted){
+     streak++; localStorage.setItem("fa_streak",streak); streakEl.textContent=streak; alreadyCounted=true;
+     if(milestones.includes(streak)) showToast("🔥 وصلت لـ "+streak+" سؤال! فضولك ملهم");
+   }
+   document.getElementById("reveal").textContent="إخفاء الإجابة";
+ }else{aEl.classList.remove("show");document.getElementById("reveal").textContent="اكتشف الإجابة 🔍"}
+};
+document.querySelectorAll(".category").forEach(btn=>{
+ btn.onclick=()=>{
+   document.querySelectorAll(".category").forEach(x=>x.classList.remove("active"));
+   btn.classList.add("active"); category=btn.dataset.cat; newQuestion();
+ };
+});
+function showToast(t){
+ toast.textContent=t;toast.classList.add("show");
+ clearTimeout(window.__toast);window.__toast=setTimeout(()=>toast.classList.remove("show"),2200);
+}
+document.getElementById("copy").onclick=async()=>{
+ try{await navigator.clipboard.writeText(location.href);showToast("✓ تم نسخ رابط الصفحة")}
+ catch(e){showToast("انسخ الرابط من شريط المتصفح")}
+};
+const shareText="لقيت «فضول عابر» 🚀 أسئلة غريبة وحقائق ممتعة كل يوم. جربها!";
+document.getElementById("whatsappShare").href="https://api.whatsapp.com/send?text="+encodeURIComponent(shareText+" "+location.href);
+newQuestion();
+</script>
+</body>
+</html>
